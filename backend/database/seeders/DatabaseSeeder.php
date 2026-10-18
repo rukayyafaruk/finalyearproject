@@ -259,5 +259,12 @@ class DatabaseSeeder extends Seeder
             // Sync rating cache
             $school->updateRatingCache();
         }
+
+    //my seeder
+    $this->call([
+        UserSeeder::class,
+        SchoolSeeder::class,
+    ]);
+
     }
 }
