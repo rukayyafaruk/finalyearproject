@@ -260,11 +260,17 @@ class DatabaseSeeder extends Seeder
             $school->updateRatingCache();
         }
 
-    //my seeder
-    $this->call([
-        UserSeeder::class,
-        SchoolSeeder::class,
-    ]);
+        // 5. Seed Kano & Northern Nigeria Schools
+        $this->call(KanoSchoolsSeeder::class);
 
+        $this->command->info('');
+        $this->command->info(' ✨ HAJIYA RUKYS DATA SEEDING COMPLETE ✨');
+        $this->command->info(' ----------------------------------------------------');
+        $this->command->info('  All Nigeria & Kano schools, reviews, listings & demo users seeded.');
+        $this->command->info('  Admin:      admin@schoolfinder.com (password123)');
+        $this->command->info('  Parent:     parent@example.com (password123)');
+        $this->command->info('  School Rep: principal@greenvalley.com (password123)');
+        $this->command->info(' ----------------------------------------------------');
+        $this->command->info('');
     }
 }
