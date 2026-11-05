@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\AdminApiController;
+use App\Http\Controllers\Api\AccountSecurityApiController;
 use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\DashboardApiController;
 use App\Http\Controllers\Api\ProfileApiController;
@@ -19,6 +20,8 @@ use Illuminate\Support\Facades\Route;
 // Auth Routes (Public)
 Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
+Route::post('/forgot-password', [AccountSecurityApiController::class, 'sendPasswordResetLink']);
+Route::post('/password/reset', [AccountSecurityApiController::class, 'resetPassword']);
 
 // Public School Directory & Discovery
 Route::get('/home', [SchoolApiController::class, 'home']);
@@ -36,6 +39,13 @@ Route::middleware('auth:sanctum')->group(function () {
     // Current User & Logout
     Route::get('/user', [AuthController::class, 'user']);
     Route::post('/logout', [AuthController::class, 'logout']);
+    Route::post('/email/verification-notification', [AccountSecurityApiController::class, 'sendEmailVerificationNotification'])
+        ->middleware('throttle:6,1');
+    Route::get('/email/verify/{id}/{hash}', [AccountSecurityApiController::class, 'verifyEmail'])
+        ->middleware('signed')
+        ->name('verification.verify');
+    Route::post('/confirm-password', [AccountSecurityApiController::class, 'confirmPassword']);
+    Route::put('/password', [AccountSecurityApiController::class, 'updatePassword']);
 
     // Unified Role Dashboard
     Route::get('/dashboard', [DashboardApiController::class, 'index']);

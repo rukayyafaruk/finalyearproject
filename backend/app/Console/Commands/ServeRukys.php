@@ -19,7 +19,7 @@ class ServeRukys extends Command
      *
      * @var string
      */
-    protected $description = 'Start the Hajiya Rukys backend server with custom notifications';
+    protected $description = 'Start the Kindred Path backend server with custom notifications';
 
     /**
      * Execute the console command.
@@ -31,15 +31,15 @@ class ServeRukys extends Command
 
         $this->output->newLine();
         $this->line('<fg=yellow;options=bold>  ========================================================================</>');
-        $this->line('<fg=cyan;options=bold>    ✨  HAJIYA RUKYS SCHOOL PORTAL BACKEND IS STARTING UP  ✨</>');
+        $this->line('<fg=cyan;options=bold>    ✨  KINDRED PATH BACKEND IS STARTING UP  ✨</>');
         $this->line('<fg=yellow;options=bold>  ========================================================================</>');
         $this->output->newLine();
-        $this->line("  <fg=green;options=bold>🚀 Hajiya Rukys is running on port {$port}!</>");
+        $this->line("  <fg=green;options=bold>🚀 Kindred Path is running on port {$port}!</>");
         $this->line("  <fg=white>👉 Local URL:</>   <fg=cyan;options=underscore>http://{$host}:{$port}</>");
         $this->line("  <fg=white>👉 API Routes:</>  <fg=cyan;options=underscore>http://{$host}:{$port}/api</>");
         $this->line("  <fg=white>👉 Sanctum:</>     <fg=green>Active (http://{$host}:{$port}/sanctum/csrf-cookie)</>");
         $this->output->newLine();
-        $this->line('<fg=gray>  Press Ctrl+C to stop the Hajiya Rukys server anytime.</>');
+        $this->line('<fg=gray>  Press Ctrl+C to stop the Kindred Path server anytime.</>');
         $this->line('<fg=yellow;options=bold>  ========================================================================</>');
         $this->output->newLine();
 

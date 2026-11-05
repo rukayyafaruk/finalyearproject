@@ -16,39 +16,40 @@ export default function Footer() {
                     {/* Brand Column */}
                     <div className="md:col-span-4 space-y-5">
                         <Link href="/" className="flex items-center gap-3 group w-fit">
-                            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-forest-500 to-gold-500 flex items-center justify-center shadow-forest group-hover:scale-105 transition-transform">
-                                <School className="w-5 h-5 text-white" />
-                            </div>
+                            <img
+                                src="/images/kindred-path-mark.webp"
+                                alt=""
+                                className="h-11 w-11 rounded-xl bg-white object-contain p-0.5 transition-transform group-hover:scale-[1.02]"
+                            />
                             <div>
-                                <div className="font-display font-bold text-xl text-white tracking-tight">
-                                    EduSelect
+                                <div className="font-display font-bold text-xl text-white tracking-tight flex items-center gap-2">
+                                    KINDRED PATH
+                                    <span className="text-[10px] tracking-widest uppercase px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
+                                        Schools
+                                    </span>
                                 </div>
-                                <div className="text-[10px] text-warm-400 font-medium tracking-wide -mt-0.5">
-                                    School Selection Portal
+                                <div className="text-[11px] text-slate-400 font-medium tracking-wide">
+                                    Nigeria's School Decision Platform
                                 </div>
                             </div>
                         </Link>
 
-                        <p className="text-xs text-warm-400 leading-relaxed max-w-xs">
-                            Nigeria's trusted educational decision-support platform, empowering parents to discover, compare, and choose the right school for their children based on verified data and authentic community reviews.
+                        <p className="text-xs text-slate-400 leading-relaxed max-w-xs">
+                            Empowering Nigerian families in Kano, Lagos, Abuja, and nationwide to discover, compare, and select accredited schools with authentic community reviews and verified tuition data.
                         </p>
 
                         <div className="flex flex-col gap-2.5">
                             <div className="flex items-center gap-2 text-xs text-emerald-400">
                                 <ShieldCheck className="w-4 h-4 shrink-0" />
-                                <span>All listings are admin-verified</span>
+                                <span>100% Admin & Ministry Verified Listings</span>
                             </div>
-                            <div className="flex items-center gap-2 text-xs text-warm-400">
-                                <MapPin className="w-4 h-4 shrink-0 text-warm-500" />
-                                <span>Federal Ministry of Education Hub, Abuja / Lagos</span>
+                            <div className="flex items-center gap-2 text-xs text-slate-400">
+                                <MapPin className="w-4 h-4 shrink-0 text-slate-500" />
+                                <span>Kano Municipal Hub & Lagos Central, Nigeria</span>
                             </div>
-                            <div className="flex items-center gap-2 text-xs text-warm-400">
-                                <Mail className="w-4 h-4 shrink-0 text-warm-500" />
-                                <span>admissions@schoolfinder.edu.ng</span>
-                            </div>
-                            <div className="flex items-center gap-2 text-xs text-warm-400">
-                                <Phone className="w-4 h-4 shrink-0 text-warm-500" />
-                                <span>+234 (0) 800-EDUSELECT</span>
+                            <div className="flex items-center gap-2 text-xs text-slate-400">
+                                <Mail className="w-4 h-4 shrink-0 text-slate-500" />
+                                <span>contact@rukysschools.ng</span>
                             </div>
                         </div>
                     </div>
@@ -135,12 +136,10 @@ export default function Footer() {
                 </div>
 
                 {/* Bottom Bar */}
-                <div className="mt-12 pt-6 border-t border-forest-900 flex flex-col sm:flex-row items-center justify-between text-xs text-warm-500 gap-3">
-                    <p>© {new Date().getFullYear()} EduSelect Platform — Academic Software Engineering (SWE4600)</p>
+                <div className="mt-12 pt-6 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-3">
+                    <p>© {new Date().getFullYear()} Kindred Path Schools Portal — All rights reserved.</p>
                     <div className="flex items-center gap-1.5">
-                        <span>Built with Laravel, React & MySQL</span>
-                        <Heart className="w-3.5 h-3.5 text-forest-500 fill-forest-500 inline mx-0.5" />
-                        <span>with care for Nigerian families</span>
+                        <span>Crafted for Nigerian parents, students & educators</span>
                     </div>
                 </div>
             </div>

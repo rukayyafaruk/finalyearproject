@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return response()->json([
-        'app' => 'Rukys Portal Backend API',
+        'app' => 'Kindred Path Backend API',
         'status' => 'online',
         'version' => '1.0.0',
         'api_documentation' => [

@@ -86,7 +86,7 @@ class KanoSchoolsSeeder extends Seeder
                 'contact_phone'      => '+234 803 900 1122',
                 'website'            => 'https://bayeroacademy.example.edu.ng',
                 'admission_status'   => 'Open',
-                'featured_image'     => 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=1200&q=80',
+                'featured_image'     => '/images/schools/school-01-kano-digital-literacy.webp',
                 'listing_status'     => 'approved',
                 'reviews'            => [
                     [
@@ -121,7 +121,7 @@ class KanoSchoolsSeeder extends Seeder
                 'contact_phone'      => '+234 806 500 7788',
                 'website'            => 'https://nasarawaschool.example.edu.ng',
                 'admission_status'   => 'Open',
-                'featured_image'     => 'https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1200&q=80',
+                'featured_image'     => '/images/schools/school-03-drc-classroom.webp',
                 'listing_status'     => 'approved',
                 'reviews'            => [
                     [
@@ -151,7 +151,7 @@ class KanoSchoolsSeeder extends Seeder
                 'contact_phone'      => '+234 064 660 0011',
                 'website'            => null,
                 'admission_status'   => 'Open',
-                'featured_image'     => 'https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=80',
+                'featured_image'     => '/images/schools/school-04-rwanda-classroom.webp',
                 'listing_status'     => 'approved',
                 'reviews'            => [
                     [
@@ -181,7 +181,7 @@ class KanoSchoolsSeeder extends Seeder
                 'contact_phone'      => '+234 802 456 7890',
                 'website'            => 'https://sunrisemontessori-kano.example.ng',
                 'admission_status'   => 'Open',
-                'featured_image'     => 'https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80',
+                'featured_image'     => '/images/schools/school-05-african-schoolrooms.webp',
                 'listing_status'     => 'approved',
                 'reviews'            => [
                     [
@@ -211,7 +211,7 @@ class KanoSchoolsSeeder extends Seeder
                 'contact_phone'      => '+234 064 880 0022',
                 'website'            => 'https://fgckano.example.gov.ng',
                 'admission_status'   => 'In Progress',
-                'featured_image'     => 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1200&q=80',
+                'featured_image'     => '/images/schools/school-06-benin-campus.webp',
                 'listing_status'     => 'approved',
                 'reviews'            => [
                     [
@@ -241,7 +241,7 @@ class KanoSchoolsSeeder extends Seeder
                 'contact_phone'      => '+234 805 112 2334',
                 'website'            => null,
                 'admission_status'   => 'Open',
-                'featured_image'     => 'https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1200&q=80',
+                'featured_image'     => '/images/schools/school-01-kano-digital-literacy.webp',
                 'listing_status'     => 'approved',
                 'reviews'            => [
                     [
@@ -276,7 +276,7 @@ class KanoSchoolsSeeder extends Seeder
                 'contact_phone'      => '+234 064 770 0033',
                 'website'            => null,
                 'admission_status'   => 'Open',
-                'featured_image'     => 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=1200&q=80',
+                'featured_image'     => '/images/schools/school-03-drc-classroom.webp',
                 'listing_status'     => 'approved',
                 'reviews'            => [],
             ],
@@ -300,7 +300,7 @@ class KanoSchoolsSeeder extends Seeder
                 'contact_phone'      => '+234 062 240 0055',
                 'website'            => 'https://pinnaclekaduna.example.edu.ng',
                 'admission_status'   => 'Open',
-                'featured_image'     => 'https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=80',
+                'featured_image'     => '/images/schools/school-04-rwanda-classroom.webp',
                 'listing_status'     => 'approved',
                 'reviews'            => [
                     [

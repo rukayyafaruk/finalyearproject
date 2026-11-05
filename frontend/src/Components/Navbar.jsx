@@ -26,36 +26,48 @@ export default function Navbar() {
 
                     {/* Brand Logo */}
                     <Link href="/" className="flex items-center gap-3 group">
-                        <div className="relative w-10 h-10 rounded-xl bg-gradient-to-br from-forest-600 via-forest-500 to-gold-500 flex items-center justify-center shadow-forest transition-transform duration-300 group-hover:scale-105 group-hover:shadow-lg">
-                            <School className="w-5 h-5 text-white" />
-                            {/* Subtle shimmer on hover */}
-                            <div className="absolute inset-0 rounded-xl bg-white/0 group-hover:bg-white/10 transition-colors duration-300" />
-                        </div>
+                        <img
+                            src="/images/kindred-path-mark.webp"
+                            alt=""
+                            className="h-11 w-11 rounded-xl bg-white object-contain p-0.5 shadow-sm transition-transform duration-300 group-hover:scale-[1.02]"
+                        />
                         <div className="leading-none">
-                            <div className="font-display font-bold text-lg text-forest-900 tracking-tight group-hover:text-forest-700 transition-colors">
-                                EduSelect
+                            <div className="flex items-center gap-1.5">
+                                <span className="font-display font-extrabold text-lg text-slate-900 tracking-tight group-hover:text-emerald-700 transition-colors sm:text-xl">
+                                    KINDRED PATH
+                                </span>
+                                <span className="hidden text-[10px] uppercase font-bold tracking-widest px-1.5 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200 sm:inline">
+                                    Portal
+                                </span>
                             </div>
-                            <div className="text-[10px] text-warm-500 font-medium tracking-wide -mt-0.5">
-                                School Selection Portal
+                            <div className="hidden text-[11px] text-slate-500 font-medium tracking-normal mt-0.5 sm:block">
+                                Schools & Academies Guide
                             </div>
                         </div>
                     </Link>
 
                     {/* Desktop Navigation Links */}
-                    <div className="hidden md:flex items-center gap-1">
+                    <div className="hidden md:flex items-center gap-1.5">
                         <Link
                             href={route('schools.index')}
-                            className="nav-link group"
+                            className="px-3.5 py-2 text-sm font-semibold rounded-xl text-slate-700 hover:text-emerald-800 hover:bg-emerald-50/70 transition-all flex items-center gap-2"
                         >
-                            <Search className="w-4 h-4 text-forest-500 group-hover:text-forest-700 transition-colors" />
+                            <Search className="w-4 h-4 text-emerald-600" />
                             <span>Browse Schools</span>
                         </Link>
                         <Link
-                            href={route('schools.compare')}
-                            className="nav-link group"
+                            href={route('schools.index', { location: 'Kano' })}
+                            className="px-3 py-1.5 text-xs font-semibold rounded-lg bg-slate-100 hover:bg-emerald-100 text-slate-700 hover:text-emerald-800 transition-all flex items-center gap-1.5 border border-slate-200/80"
                         >
-                            <Scale className="w-4 h-4 text-gold-500 group-hover:text-gold-600 transition-colors" />
-                            <span>Compare</span>
+                            <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                            <span>Kano Directory</span>
+                        </Link>
+                        <Link
+                            href={route('schools.compare')}
+                            className="px-3.5 py-2 text-sm font-semibold rounded-xl text-slate-700 hover:text-amber-800 hover:bg-amber-50/70 transition-all flex items-center gap-2"
+                        >
+                            <Scale className="w-4 h-4 text-amber-500" />
+                            <span>Compare Matrix</span>
                         </Link>
                     </div>
 
@@ -107,18 +119,18 @@ export default function Navbar() {
                                 </div>
                             </div>
                         ) : (
-                            <div className="flex items-center gap-2">
+                            <div className="flex items-center gap-2.5">
                                 <Link
                                     href={route('login')}
-                                    className="px-4 py-2 text-sm font-medium rounded-xl text-forest-700 hover:text-forest-900 hover:bg-forest-50 border border-transparent hover:border-forest-200 transition-all"
+                                    className="px-4 py-2 text-sm font-semibold rounded-xl text-slate-700 hover:text-slate-900 hover:bg-slate-100 transition-all"
                                 >
                                     Sign In
                                 </Link>
                                 <Link
                                     href={route('register')}
-                                    className="btn-primary !py-2 !px-5 !text-sm"
+                                    className="px-5 py-2 text-sm font-bold rounded-xl bg-slate-900 hover:bg-emerald-700 text-white shadow-sm hover:shadow-md transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]"
                                 >
-                                    Get Started Free
+                                    Explore Free
                                 </Link>
                             </div>
                         )}
